@@ -30,3 +30,4 @@ console.log(safeChangeCase('hello world', CaseType.SENTENCE)); // 'Hello world'
 ## License
 
 Apache 2.0
+
