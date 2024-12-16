@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/argodevops/safe-change-case/compare/v1.0.1...v1.0.2) (2024-12-16)
+
+
+### Bug Fixes
+
+* 🐛 add conventional-changelog-conventionalcommits ([0ac29a4](https://github.com/argodevops/safe-change-case/commit/0ac29a484f3ccaa5221da52444fc32422e4f32dc))
+
 ## [1.0.1](https://github.com/argodevops/safe-change-case/compare/v1.0.0...v1.0.1) (2024-12-16)
 
 
