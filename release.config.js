@@ -9,7 +9,17 @@ const branches = [
     }
 ];
 
-const commitAnalyzer = '@semantic-release/commit-analyzer';
+const commitAnalyzer = [
+    '@semantic-release/commit-analyzer',
+    {
+        preset: 'conventionalcommits',
+        releaseRules: [
+            { type: 'docs', release: 'patch' }, // Trigger a patch release for docs commits
+            { type: 'chore', scope: 'readme', release: 'patch' }, // Patch release for README updates
+        ],
+    }
+];
+
 const releaseNotesGenerator = '@semantic-release/release-notes-generator';
 const changelog = '@semantic-release/changelog';
 const npm = '@semantic-release/npm';
@@ -26,7 +36,13 @@ const deprecate = [
     }
 ];
 
-const git = '@semantic-release/git';
+const git = [
+    '@semantic-release/git',
+    {
+        assets: ['README.md', 'CHANGELOG.md', 'package.json'], // Ensure README changes are committed
+        message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}'
+    }
+];
 
 module.exports = {
     branches,
