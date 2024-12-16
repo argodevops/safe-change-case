@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/argodevops/safe-change-case/compare/v1.0.0...v1.0.1) (2024-12-16)
+
+
+### Bug Fixes
+
+* 🐛 publish public ([c0b3e44](https://github.com/argodevops/safe-change-case/commit/c0b3e44de042a2729157637cc1d657ab99f31d09))
+
 # 1.0.0 (2024-12-16)
 
 
