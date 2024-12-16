@@ -20,8 +20,8 @@ describe('safeChangeCase', () => {
     });
 
     test('handles objects by converting to JSON and changing case', () => {
-        expect(safeChangeCase({ key: 'value' }, CaseType.SNAKE)).toBe(
-            'key_value'
+        expect(safeChangeCase({ hello: 'world' }, CaseType.SNAKE)).toBe(
+            'hello_world'
         );
         expect(
             safeChangeCase({ nested: { key: 'value' } }, CaseType.PASCAL)
