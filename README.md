@@ -2,7 +2,9 @@
 
 > Safely transforms Objects, Arrays or strings between different cases.
 
-Built on top of [change-case](https://github.com/blakeembrey/change-case) it will transform between `camelCase`, `PascalCase`, `Capital Case`, `snake_case`, `kebab-case`, and `Sentence case` others.
+Built on top of [change-case](https://github.com/blakeembrey/change-case) it will transform text between `camelCase`, `snake_case`, `kebab-case`, `PascalCase`, `Capital Case`, and `Sentence case`.
+
+It will accept `undefined` and `null` values and return an empty string for safety.
 
 ## Installation
 
