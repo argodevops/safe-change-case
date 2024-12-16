@@ -19,7 +19,7 @@ const CaseType = Object.freeze({
 /**
  * Wrapper function to safely transform strings using change-case.
  *
- * @param {string|Array|Object} input - The input string, array, or object to transform.
+ * @param {string|Array|Object|null} input - The input string, array, or object to transform.
  * @param {string} caseType - The case type to apply, using the CaseType enum.
  * @param {Object} [options] - Optional additional options for case transformation.
  * @returns {string} - Transformed string or concatenated array/object as a string.
