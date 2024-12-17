@@ -1,6 +1,6 @@
 # safe-change-case
 
-> Safely transforms semi-structure text in the form of Objects, Arrays or Strings into presentable text using different cases.
+> Safely transforms semi-structured text in the form of Objects, Arrays or Strings into presentable text using different cases.
 
 Built on top of [change-case](https://github.com/blakeembrey/change-case) it will transform text to `camelCase`, `snake_case`, `kebab-case`, `PascalCase`, `Capital Case`, and `Sentence case`.
 
