@@ -15,6 +15,26 @@ It will accept `undefined` and `null` values and return an empty string for safe
 ```
 import { safeChangeCase, CaseType } from 'safe-change-case';
 
+// Strings
+console.log(camelCase('hello world'));    // 'helloWorld'
+console.log(snakeCase('hello world'));    // 'hello_world'
+console.log(kebabCase('hello world'));    // 'hello-world'
+console.log(pascalCase('hello world'));   // 'HelloWorld'
+console.log(capitalCase('hello world'));  // 'Hello World'
+console.log(sentenceCase('hello world')); // 'Hello world'
+
+// Arrays
+console.log(camelCase(['hello', 'world']));    // 'helloWorld'
+console.log(snakeCase(['hello', 'world']));    // 'hello_world'
+
+// Objects
+console.log(kebabCase({ hello: 'world' }));    // 'hello-world'
+
+// Null and undefined
+console.log(camelCase(null));           // ''
+console.log(snakeCase(undefined));      // ''
+
+// safeChangeCase function
 console.log(safeChangeCase('hello world', CaseType.CAMEL));           // 'helloWorld'
 console.log(safeChangeCase('hello world', CaseType.SNAKE));           // 'hello_world'
 console.log(safeChangeCase('hello world', CaseType.KEBAB));           // 'hello-world'

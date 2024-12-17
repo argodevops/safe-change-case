@@ -1,12 +1,13 @@
 import {
-    camelCase,
-    capitalCase,
-    kebabCase,
-    pascalCase,
-    sentenceCase,
-    snakeCase
+    camelCase as camelCaseFn,
+    capitalCase as capitalCaseFn,
+    kebabCase as kebabCaseFn,
+    pascalCase as pascalCaseFn,
+    sentenceCase as sentenceCaseFn,
+    snakeCase as snakeCaseFn
 } from 'change-case';
 
+// Define the CaseType enum
 const CaseType = Object.freeze({
     CAMEL: 'camelCase',
     SNAKE: 'snakeCase',
@@ -44,24 +45,51 @@ function safeChangeCase(input, caseType, options) {
     }
 
     if (caseType === CaseType.CAMEL) {
-        return camelCase(inputValue, options);
+        return camelCaseFn(inputValue, options);
     }
     if (caseType === CaseType.SNAKE) {
-        return snakeCase(inputValue, options);
+        return snakeCaseFn(inputValue, options);
     }
     if (caseType === CaseType.KEBAB) {
-        return kebabCase(inputValue, options);
+        return kebabCaseFn(inputValue, options);
     }
     if (caseType === CaseType.PASCAL) {
-        return pascalCase(inputValue, options);
+        return pascalCaseFn(inputValue, options);
     }
     if (caseType === CaseType.CAPITAL) {
-        return capitalCase(inputValue, options);
+        return capitalCaseFn(inputValue, options);
     }
     if (caseType === CaseType.SENTENCE) {
-        return sentenceCase(inputValue, options);
+        return sentenceCaseFn(inputValue, options);
     }
     throw new Error(`Invalid case type: ${caseType}`);
 }
 
-export { safeChangeCase, CaseType };
+/**
+ * Standalone functions for each case transformation.
+ * These call the safeChangeCase function internally.
+ */
+const camelCase = (input, options) =>
+    safeChangeCase(input, CaseType.CAMEL, options);
+const snakeCase = (input, options) =>
+    safeChangeCase(input, CaseType.SNAKE, options);
+const kebabCase = (input, options) =>
+    safeChangeCase(input, CaseType.KEBAB, options);
+const pascalCase = (input, options) =>
+    safeChangeCase(input, CaseType.PASCAL, options);
+const capitalCase = (input, options) =>
+    safeChangeCase(input, CaseType.CAPITAL, options);
+const sentenceCase = (input, options) =>
+    safeChangeCase(input, CaseType.SENTENCE, options);
+
+// Export all the functions
+export {
+    safeChangeCase,
+    camelCase,
+    snakeCase,
+    kebabCase,
+    pascalCase,
+    capitalCase,
+    sentenceCase,
+    CaseType
+};

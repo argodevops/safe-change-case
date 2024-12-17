@@ -1,5 +1,14 @@
-// eslint-disable-next-line import/extensions
-import { CaseType, safeChangeCase } from './index.js';
+import {
+    camelCase,
+    capitalCase,
+    CaseType,
+    kebabCase,
+    pascalCase,
+    safeChangeCase,
+    sentenceCase,
+    snakeCase
+    // eslint-disable-next-line import/extensions
+} from './index.js';
 
 describe('safeChangeCase', () => {
     test('returns empty string for undefined input', () => {
@@ -65,5 +74,52 @@ describe('safeChangeCase', () => {
         expect(safeChangeCase('hello world', CaseType.SENTENCE)).toBe(
             'Hello world'
         );
+    });
+});
+
+describe('Standalone case functions', () => {
+    test('camelCase function converts input correctly', () => {
+        expect(camelCase('hello world')).toBe('helloWorld');
+        expect(camelCase(['hello', 'world'])).toBe('helloWorld');
+        expect(camelCase({ hello: 'world' })).toBe('helloWorld');
+    });
+
+    test('snakeCase function converts input correctly', () => {
+        expect(snakeCase('hello world')).toBe('hello_world');
+        expect(snakeCase(['hello', 'world'])).toBe('hello_world');
+        expect(snakeCase({ hello: 'world' })).toBe('hello_world');
+    });
+
+    test('kebabCase function converts input correctly', () => {
+        expect(kebabCase('hello world')).toBe('hello-world');
+        expect(kebabCase(['hello', 'world'])).toBe('hello-world');
+        expect(kebabCase({ hello: 'world' })).toBe('hello-world');
+    });
+
+    test('pascalCase function converts input correctly', () => {
+        expect(pascalCase('hello world')).toBe('HelloWorld');
+        expect(pascalCase(['hello', 'world'])).toBe('HelloWorld');
+        expect(pascalCase({ hello: 'world' })).toBe('HelloWorld');
+    });
+
+    test('capitalCase function converts input correctly', () => {
+        expect(capitalCase('hello world')).toBe('Hello World');
+        expect(capitalCase(['hello', 'world'])).toBe('Hello World');
+        expect(capitalCase({ hello: 'world' })).toBe('Hello World');
+    });
+
+    test('sentenceCase function converts input correctly', () => {
+        expect(sentenceCase('HELLO WORLD')).toBe('Hello world');
+        expect(sentenceCase(['HELLO', 'WORLD'])).toBe('Hello world');
+        expect(sentenceCase({ HELLO: 'WORLD' })).toBe('Hello world');
+    });
+
+    test('Standalone functions handle null and undefined input', () => {
+        expect(camelCase(null)).toBe('');
+        expect(snakeCase(undefined)).toBe('');
+        expect(kebabCase(null)).toBe('');
+        expect(pascalCase(undefined)).toBe('');
+        expect(capitalCase(null)).toBe('');
+        expect(sentenceCase(undefined)).toBe('');
     });
 });
