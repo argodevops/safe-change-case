@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/argodevops/safe-change-case/compare/v1.0.3...v1.1.0) (2024-12-17)
+
+
+### Bug Fixes
+
+* dependecy updates ([bdfc91d](https://github.com/argodevops/safe-change-case/commit/bdfc91d1dd2300c3cafd9821088b78b28458a783))
+
+
+### Features
+
+* 🎸 standalone functions ([a66f048](https://github.com/argodevops/safe-change-case/commit/a66f0487fb1e60c5de551f00afd74586553acbeb))
+
 ## [1.0.3](https://github.com/argodevops/safe-change-case/compare/v1.0.2...v1.0.3) (2024-12-16)
 
 
