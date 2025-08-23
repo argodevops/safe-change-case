@@ -1,3 +1,30 @@
+## [1.1.7](https://github.com/argodevops/safe-change-case/compare/v1.1.6...v1.1.7) (2025-08-23)
+
+
+### Bug Fixes
+
+* dependecy updates ([29228b9](https://github.com/argodevops/safe-change-case/commit/29228b93fc8bb2e5ee1af47a4d6e9fc78a4254bb))
+* dependecy updates ([c7bf7bd](https://github.com/argodevops/safe-change-case/commit/c7bf7bdedf7833e6af9721b59a3ed58e111f4f37))
+* dependecy updates ([536a162](https://github.com/argodevops/safe-change-case/commit/536a162a039e9de2ac1dfa22fafb7366697e7127))
+* dependecy updates ([88ba91c](https://github.com/argodevops/safe-change-case/commit/88ba91c4bff513266d14138344c530dd39ebc1b7))
+* dependecy updates ([0396e7b](https://github.com/argodevops/safe-change-case/commit/0396e7bb0152a28ec37836c9ce575a3636847e1b))
+* dependecy updates ([434bf0d](https://github.com/argodevops/safe-change-case/commit/434bf0d7f9947d9eff0b2e00ff93c14839fcdae7))
+* dependecy updates ([3aa8556](https://github.com/argodevops/safe-change-case/commit/3aa8556e7e405da83c8346c6ce2c5b7cab3ed6c9))
+* dependecy updates ([c899365](https://github.com/argodevops/safe-change-case/commit/c899365d35109d7d502919c58b96bd590a0af626))
+* dependecy updates ([279a26d](https://github.com/argodevops/safe-change-case/commit/279a26dc7988540398133cbcd59fea6d08dccc6c))
+* dependecy updates ([60f4c16](https://github.com/argodevops/safe-change-case/commit/60f4c1646638016dc36dc992da74fa6e64546f1b))
+* dependecy updates ([2336271](https://github.com/argodevops/safe-change-case/commit/233627131c8faf180ac17a3002f480193041229c))
+* dependecy updates ([72d2e02](https://github.com/argodevops/safe-change-case/commit/72d2e02989958c2082da62eda57a3e7950afabd7))
+* dependecy updates ([8763066](https://github.com/argodevops/safe-change-case/commit/87630661f75fca9848f78368948f4c2a73970584))
+* dependecy updates ([4d79317](https://github.com/argodevops/safe-change-case/commit/4d79317266ceb08250a54bc2ccc554c1193b35aa))
+* dependecy updates ([958ed00](https://github.com/argodevops/safe-change-case/commit/958ed0001be0561dde5ab3894a9bf243c3bd67c5))
+* dependecy updates ([de37c2d](https://github.com/argodevops/safe-change-case/commit/de37c2d8930a0d3ecda5b2bfda2e5c8b3cb1543b))
+* dependecy updates ([7905d76](https://github.com/argodevops/safe-change-case/commit/7905d76ed3100f0e87ef771dd8dc7a1858dc41c4))
+* dependecy updates ([7d8c94e](https://github.com/argodevops/safe-change-case/commit/7d8c94e636bfd8a656546d8fb3b312a7459b6677))
+* dependecy updates ([6874604](https://github.com/argodevops/safe-change-case/commit/687460474b848961d3aad89924c1eb321cda8045))
+* dependecy updates ([efef3fc](https://github.com/argodevops/safe-change-case/commit/efef3fc9086af74676bbf86df02aca003f431c7c))
+* dependecy updates ([c3368b1](https://github.com/argodevops/safe-change-case/commit/c3368b1c8a056fede82d292b40206d360ae9da35))
+
 ## [1.1.6](https://github.com/argodevops/safe-change-case/compare/v1.1.5...v1.1.6) (2025-07-28)
 
 
