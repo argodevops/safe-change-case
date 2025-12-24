@@ -1435,8 +1435,8 @@ packages:
     peerDependencies:
       semantic-release: '>=20.1.0'
 
-  '@sinclair/typebox@0.34.41':
-    resolution: {integrity: sha512-6gS8pZzSXdyRHTIqoqSVknxolr1kzfy4/CeDnrzsVz8TTIWUbOBr6gnzOmTYJ3eXQNh4IYHIGi5aIL7sOZ2G/g==}
+  '@sinclair/typebox@0.34.45':
+    resolution: {integrity: sha512-qJcFVfCa5jxBFSuv7S5WYbA8XdeCPmhnaVVfX/2Y6L8WYg8sk3XY2+6W0zH+3mq1Cz+YC7Ki66HfqX6IHAwnkg==}
 
   '@sindresorhus/is@4.6.0':
     resolution: {integrity: sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==}
@@ -5469,7 +5469,7 @@ snapshots:
 
   '@jest/schemas@30.0.5':
     dependencies:
-      '@sinclair/typebox': 0.34.41
+      '@sinclair/typebox': 0.34.45
 
   '@jest/snapshot-utils@30.2.0':
     dependencies:
@@ -6469,7 +6469,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@sinclair/typebox@0.34.41': {}
+  '@sinclair/typebox@0.34.45': {}
 
   '@sindresorhus/is@4.6.0': {}
 
