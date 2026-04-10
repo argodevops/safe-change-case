@@ -26,6 +26,7 @@ describe('safeChangeCase', () => {
         expect(safeChangeCase(['hello', 'world'], CaseType.CAMEL)).toBe(
             'helloWorld'
         );
+        expect(safeChangeCase(['hello', 42], CaseType.SNAKE)).toBe('hello_42');
     });
 
     test('handles objects by converting to JSON and changing case', () => {
