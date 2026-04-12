@@ -34,9 +34,7 @@ function safeChangeCase(input, caseType, options) {
 
     if (Array.isArray(input)) {
         inputValue = input.join(' ');
-    }
-
-    if (typeof input === 'object') {
+    } else if (typeof input === 'object') {
         inputValue = JSON.stringify(input);
     }
 
@@ -44,25 +42,20 @@ function safeChangeCase(input, caseType, options) {
         throw new Error('Input must be a string, an array, or an object.');
     }
 
-    if (caseType === CaseType.CAMEL) {
-        return camelCaseFn(inputValue, options);
+    const caseFnMap = {
+        [CaseType.CAMEL]: camelCaseFn,
+        [CaseType.SNAKE]: snakeCaseFn,
+        [CaseType.KEBAB]: kebabCaseFn,
+        [CaseType.PASCAL]: pascalCaseFn,
+        [CaseType.CAPITAL]: capitalCaseFn,
+        [CaseType.SENTENCE]: sentenceCaseFn
+    };
+
+    const caseFn = caseFnMap[caseType];
+    if (!caseFn) {
+        throw new Error(`Invalid case type: ${caseType}`);
     }
-    if (caseType === CaseType.SNAKE) {
-        return snakeCaseFn(inputValue, options);
-    }
-    if (caseType === CaseType.KEBAB) {
-        return kebabCaseFn(inputValue, options);
-    }
-    if (caseType === CaseType.PASCAL) {
-        return pascalCaseFn(inputValue, options);
-    }
-    if (caseType === CaseType.CAPITAL) {
-        return capitalCaseFn(inputValue, options);
-    }
-    if (caseType === CaseType.SENTENCE) {
-        return sentenceCaseFn(inputValue, options);
-    }
-    throw new Error(`Invalid case type: ${caseType}`);
+    return caseFn(inputValue, options);
 }
 
 /**
